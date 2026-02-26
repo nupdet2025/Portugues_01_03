@@ -1,15 +1,12 @@
 {
-  "name": "3° ano - Português ODAS 3",
-  "short_name": "3° ano - Português ODAS 3",
+  "name": "test2",
+  "short_name": "test2",
   "id": "com.example.gamename",
-  "description": "Jogo de Trava-Línguas Arrastar as Palavras",
+  "description": "",
   "orientation": "landscape",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "black",
   "categories": ["games", "entertainment"],
-  "icons": [{
-        "src": "fc72f7a8dd286c787331a958e433dab4a0759ae98eb86f41061193bad9a90d57-logo-sesi.png",
-        "sizes": "512x512"
-      }]
+  "icons": []
 }
