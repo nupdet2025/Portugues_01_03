@@ -56,7 +56,7 @@ gdjs._49Code.GDback_9595menuObjects1= [];
 gdjs._49Code.GDback_9595menuObjects2= [];
 
 
-gdjs._49Code.asyncCallback9408836 = function (runtimeScene, asyncObjectsList) {
+gdjs._49Code.asyncCallback15498100 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs._49Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "2", false);
 }gdjs._49Code.localVariables.length = 0;
@@ -70,14 +70,14 @@ gdjs._49Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs._49Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs._49Code.asyncCallback9408836(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs._49Code.asyncCallback15498100(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs._49Code.userFunc0xe5a3e8 = function GDJSInlineCode(runtimeScene) {
+};gdjs._49Code.userFunc0x14924e8 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 // Parameters
@@ -127,7 +127,7 @@ let yVariation = Math.sin(time) * maxYVariation; // Calcula a variação no eixo
 sprite.setY(originalY + yVariation);
 sprite.getVariables().get("time").setNumber(time + speedY); // Incrementa o tempo para criar o efeito de onda
 };
-gdjs._49Code.userFunc0xe0c7c0 = function GDJSInlineCode(runtimeScene) {
+gdjs._49Code.userFunc0xad6e90 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 // Parameters
@@ -201,6 +201,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "assets\\64-Sundays-Twin-Musicom.mp3", true, 10, 1);
+}{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\audio_01.mp3", 4, false, 100, 1);
 }}
 
 }
@@ -242,6 +243,7 @@ for (var i = 0, k = 0, l = gdjs._49Code.GDbtn_9595avancarObjects1.length;i<l;++i
 gdjs._49Code.GDbtn_9595avancarObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "assets\\pop.ogg", false, 50, 1);
+}{gdjs.evtTools.sound.fadeSoundVolume(runtimeScene, 4, 0, 0.5);
 }
 { //Subevents
 gdjs._49Code.eventsList0(runtimeScene);} //End of subevents
@@ -253,7 +255,7 @@ gdjs._49Code.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs._49Code.userFunc0xe5a3e8(runtimeScene);
+gdjs._49Code.userFunc0x14924e8(runtimeScene);
 
 }
 
@@ -261,7 +263,7 @@ gdjs._49Code.userFunc0xe5a3e8(runtimeScene);
 {
 
 
-gdjs._49Code.userFunc0xe0c7c0(runtimeScene);
+gdjs._49Code.userFunc0xad6e90(runtimeScene);
 
 }
 
